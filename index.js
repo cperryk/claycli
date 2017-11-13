@@ -40,6 +40,8 @@ if (isRunAsCommand) {
     .demandCommand(1, 'What would you like to do today?')
     .completion()
     .argv;
+} else {
+  logger.init();
 }
 
 module.exports = {
